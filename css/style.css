@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #9A9A9A;
+  padding: 4rem;
+}
+
+.border, ul {
+  border: 1px solid #1AD2E5;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.border p, ul p {
+  color: #FCD9FC;
+}
+
+@media only screen and (min-width: 30em) {
+  .border, ul {
+    border-color: #1AD2E5;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .border, ul {
+    border-color: #FCD9FC;
+  }
+}
+
+.primary-btn {
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background: #1AD2E5;
+}
+
+.primary-btn:hover {
+  background: #107e89;
+}
+
+.secondary-btn {
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background: #FCD9FC;
+}
+
+.secondary-btn:hover {
+  background: #f57af5;
+}
+
+/*# sourceMappingURL=style.css.map */

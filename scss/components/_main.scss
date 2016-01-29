@@ -1,0 +1,31 @@
+html {
+    font-family: $helvetica;
+    background-color: #9A9A9A;
+    padding: 4rem;
+}
+
+.border {
+    border: 1px solid $teal;
+    padding: 1rem;
+    margin: 1rem 0;
+    p{
+        color: $pink;
+    }
+    @media only screen and (min-width: 30em){
+        border-color: $teal;
+    }
+    @media only screen and (min-width: 50em){
+        border-color: $pink;
+    }
+}
+
+.primary-btn{
+    @include button($teal);
+}
+.secondary-btn{
+    @include button($pink);
+}
+
+ul{
+  @extend .border;
+}

@@ -2,30 +2,80 @@ html {
     font-family: $helvetica;
     background-color: #9A9A9A;
     padding: 4rem;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
 }
 
-.border {
-    border: 1px solid $teal;
-    padding: 1rem;
-    margin: 1rem 0;
-    p{
-        color: $pink;
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body { 
+	background-color: #FFFCCC;
+    margin: 0;
+}
+
+.icon-boat { 
+	color: #fff;
+	font-size: 10em;
+    padding: 8rem 8rem;
+    text-align: center;
+    
+}
+
+.icon-boat:hover {
+    color: #FFC36C;
+}
+
+.bounce {
+	position: absolute;
+	-webkit-animation: animated 6s linear infinite; 
+    animation: animated  6s linear infinite;
+    -webkit-animation: popup 6s linear infinite; 
+    animation: popup 6s linear infinite;
+}
+
+@-webkit-keyframes animated{
+    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -webkit-transform: rotate(10deg) translateX(30px) rotate(10deg); }
+}
+
+@-webkit-keyframes popup {
+    0% {
+    transform: translateX(10px);
     }
+    0% {
+    transform: translateY(10px);
+    }
+    20% {
+    transform: translateX(40px);
+    }
+    20% {
+    transform: translateY(20px);
+    }
+}
+
+.bg {
+    background-color: #4DC8F0;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+.sea {
+    padding: 2rem 2rem 10rem 2rem;
     @media only screen and (min-width: 30em){
-        border-color: $teal;
+        width: 100%;
+        padding: 5rem;
     }
-    @media only screen and (min-width: 50em){
-        border-color: $pink;
-    }
-}
-
-.primary-btn{
-    @include button($teal);
-}
-.secondary-btn{
-    @include button($pink);
-}
-
-ul{
-  @extend .border;
+    @media only screen and (min-width: 50em) { 
+    .sea {
+        width: 80%;
+        align-content: center;
+        padding-left: 20rem;
+	}
 }
